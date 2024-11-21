@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC BC Calculator 3.0</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    <script type="text/javascript" src="PCBCMethods.js"></script>
+    <link rel="stylesheet" href="newPCStyle.css">
+</head>
+<body>
+    <div id="header">
+        <h1>PC/BC Calculator</h1>
+        <h4>This calculator visualizes sets within a modular representation.</h4>
+    </div>
+    <div id="inputs"></div>
+    <div id="modifiedDisplay"></div>
+    <div class="midRow">
+        <div id="drawing"></div>
+        <div class="side">
+            <h3>Tn:</h3>
+            <div id="tInclusion"></div>
+            <div id="transposition"></div>
+            <button id="tClear" onclick="C.result.specClear('transposition')">Clear Tn:</button>
+        </div>
+        <div class="side">
+            <h3>TnI:</h3>
+            <div id="iInclusion"></div>
+            <div id="inversion"></div>
+            <button id="iClear" onclick="C.result.specClear('inversion')">Clear TnI:</button>
+        </div>
+        <div id="totals"></div>
+    </div>
+    <div class="mega">
+        <div class="superset">
+            <h3>Superset:</h3>
+            <div id="Normal Form"></div>
+            <div id="Prime Form"></div>
+            <div id="Interval Class Vector"></div>
+            <div id="Index Vector*"></div>
+            <div id="Maximally Even"></div>
+        </div>
+        <div class="subset">
+            <h3>Subset:</h3>
+            <div id="Normal Form"></div>
+            <div id="Prime Form"></div>
+            <div id="Interval Class Vector"></div>
+            <div id="Index Vector*"></div>
+            <div id="Maximally Even"></div>
+        </div>
+    </div>
+</body>
+</html>
